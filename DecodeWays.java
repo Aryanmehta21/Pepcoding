@@ -19,7 +19,7 @@ public class DecodeWays {
                 }
             }else{
                 if(Integer.parseInt(str.substring(i-1, i+1))<=26){
-                    dp[i] = dp[i-1] + (i>=2>dp[i-2]:1);
+                    dp[i] = dp[i-1] + (i>=2?dp[i-2]:1);
                 }else{
                     dp[i] = dp[i-1];
                 }
