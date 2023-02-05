@@ -2,7 +2,7 @@ import java.util.*;
 public class DecodeWays {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        String str = sc.next();
+        String str = sc.nextLine();
 
         int[] dp= new int[str.length()];
 
@@ -18,8 +18,8 @@ public class DecodeWays {
                     dp[i] = 0;
                 }
             }else{
-                if(Integer.parseInt(str.substring(i-1, i+1))<=26){
-                    dp[i] = dp[i-1] + (i>=2?dp[i-2]:1);
+                if(str.charAt(i-1) == '1' || str.charAt(i-1) == '2'){
+                    dp[i] = dp[i-1] + (i>=2 ? dp[i-2]:1);
                 }else{
                     dp[i] = dp[i-1];
                 }
