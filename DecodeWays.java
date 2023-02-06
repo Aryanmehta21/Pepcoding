@@ -3,8 +3,12 @@ public class DecodeWays {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
-
+        if(str.charAt(0) == '0'){
+            System.out.println(0);
+            return ;
+        }
         int[] dp= new int[str.length()];
+        dp[0] = 1;
 
         for(int i =1;i<dp.length;i++){
             if(str.charAt(i-1) == '0' && str.charAt(i) == '0'){
@@ -18,7 +22,7 @@ public class DecodeWays {
                     dp[i] = 0;
                 }
             }else{
-                if(str.charAt(i-1) == '1' || str.charAt(i-1) == '2'){
+                if(Integer.parseInt(str.substring(i-1, i+1))<=26){
                     dp[i] = dp[i-1] + (i>=2 ? dp[i-2]:1);
                 }else{
                     dp[i] = dp[i-1];
