@@ -30,5 +30,6 @@ public class DecodeWays {
             }
         }
         System.out.println(dp[str.length()-1]);
+        sc.close();
     }
 }
