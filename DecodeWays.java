@@ -5,7 +5,8 @@ public class DecodeWays {
         String str = sc.nextLine();
         if(str.charAt(0) == '0'){
             System.out.println(0);
-            return ;
+            sc.close();
+            return;
         }
         int[] dp= new int[str.length()];
         dp[0] = 1;
