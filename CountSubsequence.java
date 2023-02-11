@@ -17,5 +17,6 @@ public class CountSubsequence {
             }
         }
         System.out.println(abc);
+        sc.close();
     }
 }
