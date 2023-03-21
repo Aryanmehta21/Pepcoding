@@ -14,6 +14,7 @@ public class CoinChangePermutation {
         for(int i =0;i<target; i++){
             for(int coin : arr){
                 if(coin<=i){
+                    int remAmt = i - coin;
                     
                 }
             }
