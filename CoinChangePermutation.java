@@ -11,7 +11,7 @@ public class CoinChangePermutation {
 
         int[] dp = new int[target + 1];
         dp[0] = 1;
-        for(int i =0;i<target; i++){
+        for(int i =1;i<target; i++){
             for(int coin : arr){
                 if(coin<=i){
                     int remAmt = i - coin;
