@@ -21,6 +21,7 @@ public class EqualSum {
             arr[i] = sc.nextInt();
         }
         System.out.println(equilibrium(arr, n));
+        sc.close();
     
     }
 
