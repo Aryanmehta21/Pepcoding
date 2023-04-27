@@ -23,7 +23,6 @@ public class EqualSum {
         System.out.println(equilibrium(arr, n));
         sc.close();
     }
-
     public static String equilibrium(int arr[], int n) {
         // code here
         if(arr.length<3){
