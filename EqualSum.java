@@ -10,7 +10,6 @@
 // Explanation: Consider i = 3, for [1, 2] 
 // sum is 3 and for [3] sum is also 3.
 
-
 import java.util.*;
 public class EqualSum {
     public static void main(String[] args) {
