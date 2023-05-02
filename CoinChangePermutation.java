@@ -24,7 +24,7 @@
 //     }
 // }
 
-import java.io.*;
+// import java.io.*;
 import java.util.*;
 
 public class CoinChangePermutation {
@@ -51,5 +51,6 @@ public class CoinChangePermutation {
         }
         
         System.out.println(dp[amount]);
+        sc.close();
     }
 }
