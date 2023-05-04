@@ -52,5 +52,6 @@ public class BinaryTree{
             }
         }
         traversePostOrder(root);
+        sc.close();
     }
 }
