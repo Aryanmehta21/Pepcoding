@@ -18,4 +18,3 @@ public class Climb {
         System.out.println(dp[0]);
     }
 }
-
