@@ -26,4 +26,3 @@ public class ClimbMinMoves {
         sc.close();
     }
 }
-
