@@ -7,7 +7,6 @@ public class ClimbMinMoves {
         for(int i =0;i<n;i++){
             arr[i] = sc.nextInt();
         }
-
         Integer[] dp = new Integer[n+1];
         dp[n]=0;
         for(int i =n-1;i>=0;i--){
@@ -23,7 +22,6 @@ public class ClimbMinMoves {
                 }
             }
         }
-
         System.out.println(dp[0]);
         sc.close();
     }
