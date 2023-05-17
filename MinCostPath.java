@@ -28,4 +28,3 @@ public class MinCostPath {
         sc.close();
     }
 }
-
