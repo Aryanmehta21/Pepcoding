@@ -16,4 +16,27 @@ public class EqualSum {
     public static void main(String[] args) {
         
     }
+
+    public static String equilibrium(int arr[], int n) {
+        // code here
+        if(arr.length<3){
+            return "NO";
+        }
+        int sum =0;
+        int leftSum =0;
+        for(int i =0;i<arr.length;i++){
+            sum += arr[i];
+        }
+        int i =0;
+        int j =n-1;
+        while(i<=j){
+            sum -= arr[i];
+            if(leftSum == sum){
+                return "YES";
+            }
+            leftSum += arr[i];
+            i++;
+        }
+        return "NO";
+    }
 }
