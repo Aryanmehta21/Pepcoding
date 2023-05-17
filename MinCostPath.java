@@ -10,7 +10,6 @@ public class MinCostPath {
                 arr[i][j] = sc.nextInt();
             }
         }
-
         int[][] dp = new int[n][m];
         for(int i =dp.length-1;i>=0;i--){
             for(int j = dp[0].length-1;j>=0;j--){
