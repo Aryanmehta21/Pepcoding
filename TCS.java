@@ -2,7 +2,6 @@
 
 // Problem Statement: Given an array samples[] denoting sizes of rock samples and a 2D array ranges[], the task is to count the rock samples that are in the range ranges[i][0] to ranges[i][1], for every possible 1 <= i <= N.
 
-
 import java.util.*;
 public class TCS {
     public static void main(String[] args) {
