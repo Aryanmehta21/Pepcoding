@@ -18,5 +18,4 @@ public class print_dec_inc {
         pdi(n-1);
         System.out.println(n);
     }
-
 }
