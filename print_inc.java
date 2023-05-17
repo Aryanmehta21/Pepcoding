@@ -7,6 +7,7 @@ public class print_inc {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         printIncreasing(n);
+        sc.close();
     }
 
     public static void printIncreasing(int n){
