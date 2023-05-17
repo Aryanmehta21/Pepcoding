@@ -7,6 +7,7 @@ public class print_dec_inc {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         pdi(n);
+        sc.close();
     }
 
     public static void pdi(int n){
