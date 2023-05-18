@@ -16,6 +16,8 @@ public class TargetSum {
                     dp[i][j] = true;
                 }else if(i == 0){
                     dp[i][j] = false;
+                }else if(j==0){
+                    dp[i][j] = true;
                 }
             }
         }
