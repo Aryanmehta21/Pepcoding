@@ -18,6 +18,12 @@ public class TargetSum {
                     dp[i][j] = false;
                 }else if(j==0){
                     dp[i][j] = true;
+                }else{
+                    if(dp[i-1][j] == true){
+                        dp[i][j] = true;
+                    }else{
+                        int val = arr[i-1];
+                    }
                 }
             }
         }
