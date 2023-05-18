@@ -32,5 +32,6 @@ public class TargetSum {
                 }
             }
         }
+        System.out.println(dp[arr.length][target]);
     }
 }
