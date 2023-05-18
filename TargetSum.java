@@ -10,6 +10,12 @@ public class TargetSum {
 
         int target = sc.nextInt();
         boolean[][] dp = new boolean[n+1][target+1];
-
+        for(int i =0;i<dp.length;i++){
+            for(int j =0;j<dp[0].length;j++){
+                if(i==0 && j == 0){
+                    
+                }
+            }
+        }
     }
 }
