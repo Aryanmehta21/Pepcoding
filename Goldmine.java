@@ -36,5 +36,6 @@ public class Goldmine{
         }
 
         System.out.println(max);
+        sc.close();
     }
 }
