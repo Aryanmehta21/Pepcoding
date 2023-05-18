@@ -9,6 +9,7 @@ public class TargetSum {
         }
 
         int target = sc.nextInt();
-        int[][] dp = new int[n+1][target+1];
+        boolean[][] dp = new boolean[n+1][target+1];
+
     }
 }
