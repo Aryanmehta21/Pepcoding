@@ -22,7 +22,7 @@ public class Goldmine{
                 }else if(i == mine.length-1){
                     dp[i][j] = mine[i][j] + Math.max(dp[i][j+1], dp[i-1][j+1]);
                 }else{
-                    dp[i][j] = mine[i][j] + Math.max(dp[i][j+1], Math.max(dp[i+1][j+1], dp[i-1][j-1]));
+                    dp[i][j] = mine[i][j] + Math.max(dp[i][j+1], Math.max(dp[i+1][j+1], dp[i-1][j+1]));
                 }
             }
         }
