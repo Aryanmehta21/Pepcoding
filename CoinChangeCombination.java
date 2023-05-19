@@ -8,7 +8,6 @@ public class CoinChangeCombination {
             arr[i] = sc.nextInt();
         }
         int target = sc.nextInt();
-
         int[] dp = new int[target+1];
         dp[0] = 1;
         for(int i =0;i<arr.length;i++){
@@ -16,7 +15,7 @@ public class CoinChangeCombination {
                 dp[j] += dp[j-arr[i]];
             }
         }
-
         System.out.println(dp[target]);
+        sc.close();
     }
 }
