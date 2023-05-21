@@ -1,5 +1,5 @@
 // Question Link - https://pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/target-sum-subsets-dp-official/ojquestion
-// Solution Link - 
+// Solution Link - https://youtu.be/tRpkluGqINc
 import java.util.*;
 public class TargetSum {
     public static void main(String[] args) {
