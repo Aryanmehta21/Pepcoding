@@ -9,7 +9,6 @@ public class TargetSum {
         for(int i =0;i<n;i++){
             arr[i] = sc.nextInt();
         }
-
         int target = sc.nextInt();
         boolean[][] dp = new boolean[n+1][target+1];
         for(int i =0;i<dp.length;i++){
