@@ -8,7 +8,6 @@ public class CoinChangePermutation {
             arr[i] = sc.nextInt();
         }
         int target = sc.nextInt();
-
         int[] dp = new int[target + 1];
         dp[0] = 1;
         for(int i =1;i<=target; i++){
