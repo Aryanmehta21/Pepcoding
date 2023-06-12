@@ -7,7 +7,6 @@ public class Climb {
         for(int i =0;i<n;i++){
             arr[i] = sc.nextInt();
         }
-
         int[] dp = new int[n+1];
         dp[n] = 1;
         for(int i =n-1;i>=0;i--){
