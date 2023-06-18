@@ -1,12 +1,12 @@
 import java.util.*;
-public class PaintHouse2 {
+public class PaintHouseManyColors {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int c = sc.nextInt();
         int [][] arr = new int[n][c];
         for(int i =0;i<arr.length;i++){
-            for(int j =0;i<arr[0].length;i++){
+            for(int j =0;j<arr[0].length;j++){
                 arr[i][j] = sc.nextInt();
             }
         }
