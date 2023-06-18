@@ -19,5 +19,6 @@ public class MaximumSumNonAdjacentElements {
         }
 
         System.out.println(Math.max(inc, exc));
+        sc.close();
     }
 }
