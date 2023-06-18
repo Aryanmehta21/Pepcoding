@@ -23,5 +23,6 @@ public class PaintHouse {
         }
         long ans = Math.min(dp[n-1][0], Math.min(dp[n-1][1], dp[n-1][2]));
         System.out.println(ans);
+        sc.close();
     }
 }
