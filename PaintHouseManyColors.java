@@ -72,5 +72,6 @@ public class PaintHouseManyColors {
             sleast = nsleast;
         }
         System.out.println(least);
+        sc.close();
     }
 }
