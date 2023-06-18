@@ -1,4 +1,3 @@
-// You are using Java
 import java.util.*;
 class SwapArrayList{
     public static void main(String[] args){
