@@ -19,5 +19,6 @@ class SwapArrayList{
             i++;
             j--;
         }
+        sc.close();
     }
 }
