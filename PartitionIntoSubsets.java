@@ -23,5 +23,6 @@ public class PartitionIntoSubsets {
             }
         }
         System.out.println(dp[k][n]);
+        sc.close();
     }
 }
