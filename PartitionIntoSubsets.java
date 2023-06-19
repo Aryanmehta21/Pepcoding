@@ -27,3 +27,11 @@ public class PartitionIntoSubsets {
         sc.close();
     }
 }
+
+
+// t = teams
+// p = people
+// formula
+// if(row<=col){
+    // 
+// }
