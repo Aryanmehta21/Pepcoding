@@ -33,5 +33,5 @@ public class PartitionIntoSubsets {
 // p = people
 // formula
 // if(row<=col){
-    // 
+    // row[i] * row number + col[j]
 // }
