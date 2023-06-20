@@ -32,6 +32,6 @@ public class PartitionIntoSubsets {
 // t = teams
 // p = people
 // formula
-// if(row<=col){
+// if(row(t)<=col(p)){
     // row[i] * row number + col[j]
 // }
