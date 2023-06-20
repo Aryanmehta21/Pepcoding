@@ -42,7 +42,6 @@
 //     }
 // }
 
-import java.io.*;
 import java.util.*;
 
 public class ZeroOneKnapSack {
@@ -87,5 +86,6 @@ public class ZeroOneKnapSack {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
