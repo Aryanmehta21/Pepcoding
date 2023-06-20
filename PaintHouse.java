@@ -11,7 +11,6 @@ public class PaintHouse {
             }
         }
         long[][] dp = new long[n][3];
-
         dp[0][0] = arr[0][0];
         dp[0][1] = arr[0][1];
         dp[0][2] = arr[0][2];
