@@ -24,6 +24,14 @@ public class BuySellStock3 {
             }else{
                 nbsp = obsp;
             }
+            if(obsp + arr[i] - fee > ossp){
+                nssp = obsp + arr[i] - fee;
+            }else{
+                nssp = ossp;
+            }
+            obsp = nbsp;
+            ossp = nssp;
         }
+        return ossp;
     }
 }
