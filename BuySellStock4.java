@@ -41,8 +41,7 @@ public class BuySellStock4 {
             obsp = nbsp;
             ossp = nssp;
             ocsp = ncsp;
-
-            return ossp;
         }
+        return ossp;
     }
 }
