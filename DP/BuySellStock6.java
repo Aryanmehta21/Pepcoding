@@ -9,5 +9,10 @@ public class BuySellStock6 {
         }
         int k = sc.nextInt();
         System.out.println(maxProfit(arr, k));
+        sc.close();
+    }
+
+    public static int maxProfit(int[] prices, int k){
+        
     }
 }
