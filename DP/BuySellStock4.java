@@ -34,7 +34,19 @@ public class BuySellStock4 {
                 maxat = prices[i];
             }
             mpibt = maxat - prices[i];
-            if(mpibt > )
+            if(mpibt > dpr[i+1]){
+                dpr[i] = mpibt;
+            }else{
+                dpr[i] = dpr[i+1];
+            }
         }
+
+        int op = 0;
+        for(int i =0;i<prices.length;i++){
+            if(dpl[i] + dpr[i] > op){
+                op = dpl[i] + dpr[i];
+            }
+        }
+        return op;
     }
 }
