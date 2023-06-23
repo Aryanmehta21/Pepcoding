@@ -8,6 +8,6 @@ public class BuySellStock6 {
             arr[i] = sc.nextInt();
         }
         int k = sc.nextInt();
-        System.out.println()
+        System.out.println(maxProfit(arr, k));
     }
 }
