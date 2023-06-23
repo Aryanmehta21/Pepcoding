@@ -10,4 +10,8 @@ public class BuySellStock4 {
         System.out.println(profit(arr));
         sc.close();
     }
+
+    public static int profit(int[] prices){
+        
+    }
 }
