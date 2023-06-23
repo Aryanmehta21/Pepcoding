@@ -50,7 +50,8 @@ public class BuySellStock4 {
     //     return op;
     // }
 
+    // Leetcode (Short)...
+    public static int profit(int[] prices){
 
-
-    
+    }
 }
