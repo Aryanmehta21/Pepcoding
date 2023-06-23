@@ -45,3 +45,12 @@ public class BuySellStock4 {
         return ossp;
     }
 }
+
+
+
+// obsp = old bought state price
+// ossp = old sold state price
+// ocsp = old cooldown state price
+// nbsp = new bought state price
+// nssp = new sold state price
+// ncsp = new cooldown state price
