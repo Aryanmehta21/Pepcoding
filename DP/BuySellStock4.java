@@ -14,13 +14,13 @@ public class BuySellStock4 {
     public static int profit(int[] prices){
         int mpist = 0;
         int leastsf = prices[0];
-        int[] dpl = new int[prices.length];
-        for(int i = 1;i<prices.length;i++){
-            if(prices[i] < leastsf){
-                leastsf = prices[i];
-            }
-            mpist = prices[i] - leastsf;
-            if(mpist > dpl[i-1]){
+        int[] dpl = new int[prices.length];                 //mpist = maxprofitifsoldtoday
+        for(int i = 1;i<prices.length;i++){                //leastsf = leastsofar
+            if(prices[i] < leastsf){                       //dpl = dp left
+                leastsf = prices[i];                       //mpibt = maxprofitifboughttoday
+            }                                              //maxat = max after today
+            mpist = prices[i] - leastsf;                   //dpr = dp right
+            if(mpist > dpl[i-1]){                          //op = overall profit
                 dpl[i] = mpist;
             }else{
                 dpl[i] = dpl[i-1];
