@@ -31,5 +31,6 @@ public class TestClass {
         }
 
         System.out.println(favoriteSingers);
+        sc.close();
     }
 }
