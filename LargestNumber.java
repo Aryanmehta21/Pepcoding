@@ -1,6 +1,5 @@
 // Question : https://www.hackerearth.com/problem/algorithm/largest-number-10-ca319b09/?source=list_view
 import java.util.*;
-
 class TestClass {
     public static void main(String args[] ) throws Exception {
         Scanner sc = new Scanner(System.in);
@@ -16,7 +15,6 @@ class TestClass {
         if (k >= n) {
             return "0";
         }
-
         StringBuilder result = new StringBuilder(number);
         int i = 0;
         while (k > 0 && i < result.length() - 1) {
@@ -39,7 +37,6 @@ class TestClass {
             leadingZeros++;
         }
         result.delete(0, leadingZeros);
-
         return result.toString();
     }
 }
