@@ -9,6 +9,7 @@ class TestClass {
         String ans = buildLargestNumber(str, k);
         long a = Long.parseLong(ans);
         System.out.println(a);
+        sc.close();
     }
     public static String buildLargestNumber(String number, long k) {
         int n = number.length();
