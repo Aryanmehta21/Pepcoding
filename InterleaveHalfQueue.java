@@ -25,5 +25,6 @@ public class InterleaveHalfQueue {
         while(!q.isEmpty()){
             System.out.print(q.remove() + " ");
         }
+        sc.close();
     }
 }
