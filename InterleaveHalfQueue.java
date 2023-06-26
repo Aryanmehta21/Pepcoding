@@ -10,6 +10,11 @@ public class InterleaveHalfQueue {
             q.add(x);
         }
 
-        
+        Queue<Integer> firstHalf = new LinkedList<>();
+        int size = q.size()/2;
+
+        for(int i=0;i<size;i++){
+            firstHalf.add(q.remove());
+        }
     }
 }
