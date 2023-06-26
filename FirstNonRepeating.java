@@ -23,5 +23,6 @@ public class FirstNonRepeating {
                 System.out.print(q.peek() + " ");
             }
         }
+        sc.close();
     }
 }
