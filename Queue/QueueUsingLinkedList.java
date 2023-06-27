@@ -13,8 +13,10 @@ public class QueueUsingLinkedList {
         public static Node head, tail = null;
         
         public static boolean isEmpty(){
-
+            return head == null && tail == null;
         }
+
+        
     }
     public static void main(String[] args){
 
