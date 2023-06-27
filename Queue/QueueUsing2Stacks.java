@@ -21,7 +21,14 @@ public class QueueUsing2Stacks {
         }
 
         static int peek(){
-
+            while(!s1.empty()){
+                s2.push(s1.pop());
+            }
+            int ans = s2.peek();
+            while(!s2.isEmpty()){
+                s1.push(s2.pop());
+            }
+            return ans;
         }
     }
     public static void main(String[] args){
