@@ -29,6 +29,19 @@ public class StackUsing2Queues {
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        Stack s = new Stack();
+        System.out.println(s.isEmpty());
         int n = sc.nextInt();
+        for(int i = 0;i<n;i++){
+            int x = sc.nextInt();
+            s.push(x);
+        }
+        System.out.println(s.isEmpty());
+        System.out.println("Peek = " + s.peek());
+
+        while(!s.isEmpty()){
+            System.out.println(s.pop());
+        }
+        sc.close();
     }
 }
