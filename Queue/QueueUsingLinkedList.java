@@ -16,7 +16,13 @@ public class QueueUsingLinkedList {
             return head == null && tail == null;
         }
 
-        
+        public static void add(int data){
+            Node newNode = new Node(data);
+            if(head == null){
+                
+            }
+        }
+
     }
     public static void main(String[] args){
 
