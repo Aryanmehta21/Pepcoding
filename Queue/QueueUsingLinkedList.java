@@ -19,10 +19,26 @@ public class QueueUsingLinkedList {
         public static void add(int data){
             Node newNode = new Node(data);
             if(head == null){
-                
+                head = tail = newNode;
+                return;
             }
+            tail.next = newNode;
+            tail = newNode;
         }
 
+        public static int remove(){
+            if(isEmpty()){
+                System.out.println("Empty queue!");
+                return -1;
+            }
+            int front = head.data;
+            if(head == tail){
+                head = tail = null;
+            }else{
+                head = head.next;
+            }
+            return front;
+        }
     }
     public static void main(String[] args){
 
