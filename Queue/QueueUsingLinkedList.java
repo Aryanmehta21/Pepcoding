@@ -43,8 +43,8 @@ public class QueueUsingLinkedList {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         Queue q = new Queue();
-        int n = sc.nextInt();
         System.out.println(q.isEmpty());
+        int n = sc.nextInt();
         for(int i = 0;i<n;i++){
             int x = sc.nextInt();
             q.add(x);
@@ -52,7 +52,7 @@ public class QueueUsingLinkedList {
         System.out.println(q.isEmpty());
 
         while(!q.isEmpty()){
-            System.out.println(q.remove());
+            System.out.print(q.remove() + " ");
         }
     }
 }
