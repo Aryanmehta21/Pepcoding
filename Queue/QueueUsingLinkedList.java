@@ -54,5 +54,6 @@ public class QueueUsingLinkedList {
         while(!q.isEmpty()){
             System.out.print(q.remove() + " ");
         }
+        sc.close();
     }
 }
