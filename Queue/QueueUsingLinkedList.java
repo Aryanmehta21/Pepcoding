@@ -1,6 +1,6 @@
 import java.util.*;
 public class QueueUsingLinkedList {
-    class Node{
+    public static class Node{
         int data;
         Node next;
         public Node(int data){
@@ -9,7 +9,7 @@ public class QueueUsingLinkedList {
         }
     }
 
-    class Queue{
+    public static class Queue{
         public static Node head, tail = null;
         
         public static boolean isEmpty(){
