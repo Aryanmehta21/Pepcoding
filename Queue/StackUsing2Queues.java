@@ -4,6 +4,10 @@ public class StackUsing2Queues {
         static Queue<Integer> q1 = new LinkedList<>();
         static Queue<Integer> q2 = new LinkedList<>();
 
+        static boolean isEmpty(){
+            return q1.isEmpty() && q2.isEmpty();
+        }
+
         static void push(int data){
             while(!q1.isEmpty()){
                 q2.add(q1.remove());
@@ -24,6 +28,7 @@ public class StackUsing2Queues {
     }
 
     public static void main(String[] args){
-
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
     }
 }
