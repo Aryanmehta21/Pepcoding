@@ -32,7 +32,13 @@ public class InfixToPostfix{
                     postfix.append(s.peek());
                     s.pop();
                 }
+                s.push(ch);
             }
+        }
+
+        while(!s.isEmpty()){
+            postfix.append(s.peek());
+            s.pop();
         }
     }
     public static void main(String[] args){
