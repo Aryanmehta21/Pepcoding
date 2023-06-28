@@ -8,7 +8,13 @@ public class InfixToPostfix{
             return 2;
         }else if(ch == '^'){
             return 3;
+        }else {
+            return 0;
         }
+    }
+
+    public static String convert(String exp){
+        
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
