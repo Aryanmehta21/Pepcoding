@@ -2,7 +2,11 @@ import java.util.*;
 public class InfixToPostfix{
 
     public static int pre(char ch){
-        
+        if(ch == '+' || ch == '-'){
+            return 1;
+        }else if(ch == '*' || ch == '/'){
+            return 2;
+        }
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
