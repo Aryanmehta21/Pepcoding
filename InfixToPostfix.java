@@ -17,7 +17,22 @@ public class InfixToPostfix{
         Stack<Character> s = new Stack<>();
         StringBuilder postfix = new StringBuilder();
         for(char ch: exp.toCharArray()){
-            
+            if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9')){
+                postfix.append(ch);
+            }else if(ch == '('){
+                s.push(ch);
+            }else if(ch == ')'){
+                while(!s.isEmpty() && s.peek() != '('){
+                    postfix.append(s.peek());
+                    s.pop();
+                }
+                s.pop();
+            }else{
+                while(!s.isEmpty() && pre(ch) <= pre(s.peek())){
+                    postfix.append(s.peek());
+                    s.pop();
+                }
+            }
         }
     }
     public static void main(String[] args){
