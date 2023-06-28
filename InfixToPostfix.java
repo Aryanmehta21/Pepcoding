@@ -14,7 +14,11 @@ public class InfixToPostfix{
     }
 
     public static String convert(String exp){
-        
+        Stack<Character> s = new Stack<>();
+        StringBuilder postfix = new StringBuilder();
+        for(char ch: exp.toCharArray()){
+            
+        }
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
