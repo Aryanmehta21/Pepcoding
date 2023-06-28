@@ -40,6 +40,8 @@ public class InfixToPostfix{
             postfix.append(s.peek());
             s.pop();
         }
+
+        return postfix.toString();
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
