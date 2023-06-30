@@ -22,6 +22,9 @@ public class ConnectNropes {
         }
         int ans = 0;
         while(pq.size()>1){
+            int first = pq.poll();
+            int second = pq.poll();
+            int sum = first + second;
             
         }
     }
