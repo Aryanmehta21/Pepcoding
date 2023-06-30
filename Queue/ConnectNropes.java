@@ -15,5 +15,7 @@ public class ConnectNropes {
         System.out.println(minCost(arr));
     }
 
-    
+    public static int minCost(int[] arr){
+        
+    }
 }
