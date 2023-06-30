@@ -20,5 +20,9 @@ public class ConnectNropes {
         for(int i = 0;i<arr.length;i++){
             pq.add(arr[i]);
         }
+        int ans = 0;
+        while(pq.size()>1){
+            
+        }
     }
 }
