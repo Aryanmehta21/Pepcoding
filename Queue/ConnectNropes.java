@@ -13,6 +13,7 @@ public class ConnectNropes {
             arr[i] = sc.nextInt();
         }
         System.out.println(minCost(arr));
+        sc.close();
     }
 
     public static int minCost(int[] arr){
