@@ -25,7 +25,9 @@ public class ConnectNropes {
             int first = pq.poll();
             int second = pq.poll();
             int sum = first + second;
-            
+            ans += sum;
+            pq.add(sum);
         }
+        return ans;
     }
 }
