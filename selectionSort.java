@@ -33,5 +33,6 @@ public class selectionSort{
         for(int i : heights){
             System.out.print(i + " ");
         }
+        sc.close();
     }
 }
