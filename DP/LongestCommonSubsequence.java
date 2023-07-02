@@ -2,7 +2,7 @@ import java.util.*;
 public class LongestCommonSubsequence {
 
     public static int LCS(String text1, String text2){
-
+        int[][] dp = new int[text1.length() + 1][text2.length()+1];
     }
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
