@@ -8,5 +8,7 @@ public class LongestCommonSubsequence {
         Scanner sc = new Scanner(System.in);
         String str1 = sc.nextLine();
         String str2 = sc.nextLine();
+
+        System.out.println(LCS(str1, str2));
     }
 }
