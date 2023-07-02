@@ -10,5 +10,6 @@ public class LongestCommonSubsequence {
         String str2 = sc.nextLine();
 
         System.out.println(LCS(str1, str2));
+        sc.close();
     }
 }
