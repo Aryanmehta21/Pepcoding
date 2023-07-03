@@ -19,6 +19,7 @@ public class SearchInInfiniteSortedArray{
         }
 
         System.out.println(binarySearch(arr, key, low, high));
+        sc.close();
 
     }
     public static int binarySearch(int[] arr, int key, int low, int high){
@@ -28,7 +29,7 @@ public class SearchInInfiniteSortedArray{
 
             if(arr[mid] == key){
                 return mid;
-            }else if(arr[mid] < key){
+            }else if(arr[mid] > key){
                 high = mid-1;
             }else{
                 low = mid +1;
