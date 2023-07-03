@@ -9,5 +9,11 @@ public class SearchInRotatedSortedArray {
         }
         int key = sc.nextInt();
         System.out.println(search(arr, key));
+        sc.close();
+    }
+
+
+    public static int search(int[] arr, int target){
+        
     }
 }
