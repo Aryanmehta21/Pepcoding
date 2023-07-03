@@ -21,4 +21,8 @@ public class SearchInInfiniteSortedArray{
         System.out.println(binarySearch(arr, key, low, high));
 
     }
+    public static int binarySearch(int[] arr, int key, int low, int high){
+
+        
+    }
 }
