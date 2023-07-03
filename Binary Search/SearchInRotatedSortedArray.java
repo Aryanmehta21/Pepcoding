@@ -7,5 +7,7 @@ public class SearchInRotatedSortedArray {
         for(int i =0;i<arr.length;i++){
             arr[i] = sc.nextInt();
         }
+        int key = sc.nextInt();
+        System.out.println(search(arr, key));
     }
 }
