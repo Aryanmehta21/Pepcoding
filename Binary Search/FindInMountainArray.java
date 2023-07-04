@@ -53,5 +53,6 @@ public class FindInMountainArray {
         }
         int target = sc.nextInt();
         System.out.println(search(target, arr));
+        sc.close();
     }
 }
