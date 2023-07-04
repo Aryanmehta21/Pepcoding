@@ -17,6 +17,9 @@ Output: 2.00000
 Explanation: merged array = [1,2,3] and median is 2.
  */
 
+
+//  O(log(m+n)) --> Binary Search
+
 import java.util.*;
 
 public class MedianOfTwoSortedArrays {
