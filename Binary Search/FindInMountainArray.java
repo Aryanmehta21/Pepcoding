@@ -1,5 +1,14 @@
 import java.util.*;
 public class FindInMountainArray {
+    public static int search(int target, int[] arr){
+        int low = 0;
+        int high = arr.length-1;
+
+        while(low<=high){
+            
+        }
+    }
+
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
