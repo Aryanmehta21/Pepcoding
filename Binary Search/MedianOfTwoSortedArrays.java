@@ -50,7 +50,7 @@ public class MedianOfTwoSortedArrays {
             }else{
                 begin1 = i1+1;
             }
-
         }
+        return 0;
     }
 }
