@@ -40,9 +40,15 @@ public class MedianOfTwoSortedArrays {
             int max2 = (i2 == 0) ? Integer.MIN_VALUE : b[i2 - 1];
 
             if((max1<=min2) && (max2 <= min1)){
-                if(a.length + b.length) % 2 == 0){
+                if((a.length + b.length) % 2 == 0){
                     return((double) (Math.max(max1, max2) + Math.min(min1, min2))/2);
+                }else{
+                    return ((double) (Math.max(max1, max2)));
                 }
+            }else if(max1>max2){
+                end1 = i1 -1;
+            }else{
+                begin1 = i1+1;
             }
 
         }
