@@ -9,5 +9,6 @@ public class FindPeakElementinArray {
         }
 
         System.out.println(findPeak(arr));
+        sc.close();
     }
 }
