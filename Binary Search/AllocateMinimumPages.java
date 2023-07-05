@@ -8,5 +8,8 @@ public class AllocateMinimumPages {
             books[i] = sc.nextInt();
         }
         int k = sc.nextInt();
+
+        System.out.println(minPages(books, k));
+        sc.close();
     }
 }
