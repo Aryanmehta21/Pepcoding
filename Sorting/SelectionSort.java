@@ -9,22 +9,6 @@ public class SelectionSort {
         }
     }
 
-    public static int getMaxIndex(int[] arr, int start, int end){
-        int max = start;
-        for(int i = start;i<end;i++){
-            if(arr[i] > arr[max]){
-                max = i;
-            }
-        }
-        return max;
-    }
-
-    public static void swap(int[] arr, int first, int second){
-        int temp = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp;
-    }
-
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
