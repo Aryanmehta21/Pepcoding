@@ -11,9 +11,9 @@ public class SelectionSort {
 
     public static int getMaxIndex(int[] arr, int start, int end){
         int max = start;
-        for(int i = start;i<=end;i++){
+        for(int i = start;i<end;i++){
             if(arr[i] > arr[max]){
-                max = arr[i];
+                max = i;
             }
         }
         return max;
