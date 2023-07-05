@@ -15,6 +15,20 @@ public class AllocateMinimumPages {
         }
         return res;
     }
+
+    public static boolean isFeasible(int[] books, int k, int res){
+        int student = 1;
+        int sum = 0;
+        for(int i = 0;i<books.length;i++){
+            if(sum + books[i] > res){
+                student++;
+                sum = books[i];
+            }else{
+                sum += books[i];
+            }
+        }
+        return student <= k;
+    }
     
     public static int maxOf(int[] books){
         int max = Integer.MIN_VALUE;
