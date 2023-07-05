@@ -20,7 +20,9 @@ public class SelectionSort {
     }
 
     public static void swap(int[] arr, int first, int second){
-        
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
     }
 
     public static void main(String[] args){
