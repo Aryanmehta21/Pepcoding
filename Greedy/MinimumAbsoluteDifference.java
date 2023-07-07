@@ -22,6 +22,6 @@ public class MinimumAbsoluteDifference {
         }
         System.out.println("Min Difference = " + minDiff);
 
-
+        sc.close();
     }
 }
