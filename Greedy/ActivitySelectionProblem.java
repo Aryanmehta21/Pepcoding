@@ -19,5 +19,9 @@ public class ActivitySelectionProblem{
             activities[i][1] = start[i];
             activities[i][2] = end[i]; 
         }
+
+
+        Arrays.sort(activities, (a,b) -> Integer.compare(a[2], b[2]));
+        
     }
 }
