@@ -5,6 +5,11 @@ public class FractionalKnapsack {
         int n = sc.nextInt();
         int[] val = new int[n];
         int[] weights = new int[n];
-        
+        for(int i = 0;i<n;i++){
+            val[i]= sc.nextInt();
+        }
+        for(int i = 0;i<n;i++){
+            weights[i]= sc.nextInt();
+        }
     }
 }
