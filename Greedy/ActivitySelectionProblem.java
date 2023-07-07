@@ -26,8 +26,10 @@ public class ActivitySelectionProblem{
         int maxAct = 1;
         list.add(activities[0][0]);
         int lastEnd = activities[0][2];
-        for(int i = 0;i<end.length;i++){
-            
+        for(int i = 1;i<end.length;i++){
+            if(activities[i][2] >= lastEnd){
+                
+            }
         }
         
     }
