@@ -33,5 +33,6 @@ public class FractionalKnapsack {
             }
         }
         System.out.println("Max Value = " + finalVal);
+        sc.close();
     }
 }
