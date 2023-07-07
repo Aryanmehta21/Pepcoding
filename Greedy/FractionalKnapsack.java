@@ -18,5 +18,6 @@ public class FractionalKnapsack {
             ratio[i][0] = i;
             ratio[i][1] = val[i] / (double)weights[i];
         }
+        Arrays.sort(ratio, (a,b) -> Double.compare(b[1], a[1])); 
     }
 }
