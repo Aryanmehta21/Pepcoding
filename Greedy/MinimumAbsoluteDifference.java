@@ -20,6 +20,7 @@ public class MinimumAbsoluteDifference {
         for(int i = 0;i<n;i++){
             minDiff += Math.abs(A[i]-B[i]);
         }
+        System.out.println("Min Difference = " + minDiff);
 
 
     }
