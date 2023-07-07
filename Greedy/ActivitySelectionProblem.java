@@ -27,10 +27,13 @@ public class ActivitySelectionProblem{
         list.add(activities[0][0]);
         int lastEnd = activities[0][2];
         for(int i = 1;i<end.length;i++){
-            if(activities[i][2] >= lastEnd){
-                
+            if(activities[i][1] >= lastEnd){
+                maxAct++;
+                list.add(activities[i][0]);
+                lastEnd = activities[i][2];
             }
         }
+        
         
     }
 }
