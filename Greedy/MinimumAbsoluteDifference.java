@@ -16,9 +16,9 @@ public class MinimumAbsoluteDifference {
 
         Arrays.sort(A);
         Arrays.sort(B);
-
+        int minDiff =0;
         for(int i = 0;i<n;i++){
-            
+            minDiff += Math.abs(A[i]-B[i]);
         }
 
 
