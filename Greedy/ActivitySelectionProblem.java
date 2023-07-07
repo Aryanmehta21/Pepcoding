@@ -35,6 +35,9 @@ public class ActivitySelectionProblem{
         }
 
         System.out.println("Max Activities = " + maxAct);
-        for(int i : )
+        for(int i : list){
+            System.out.print("A" + i + " ");
+        }
+        sc.close();
     }
 }
