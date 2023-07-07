@@ -20,7 +20,15 @@ public class ActivitySelectionProblem{
             activities[i][2] = end[i]; 
         }
 
-
         Arrays.sort(activities, (a,b) -> Integer.compare(a[2], b[2]));
+
+        ArrayList<Integer> list = new ArrayList<>();
+        int maxAct = 1;
+        list.add(activities[0][0]);
+        int lastEnd = activities[0][2];
+        for(int i = 0;i<end.length;i++){
+            
+        }
+        
     }
 }
