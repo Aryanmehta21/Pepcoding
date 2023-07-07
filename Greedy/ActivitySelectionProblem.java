@@ -22,6 +22,5 @@ public class ActivitySelectionProblem{
 
 
         Arrays.sort(activities, (a,b) -> Integer.compare(a[2], b[2]));
-        
     }
 }
