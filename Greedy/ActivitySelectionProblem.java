@@ -11,5 +11,13 @@ public class ActivitySelectionProblem{
         for(int i = 0;i<end.length;i++){
             end[i] = sc.nextInt();
         }
+
+
+        int[][] activities = new int[start.length][3];
+        for(int i =0;i<start.length;i++){
+            activities[i][0] = i;
+            activities[i][1] = start[i];
+            activities[i][2] = end[i]; 
+        }
     }
 }
