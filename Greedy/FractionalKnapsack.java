@@ -19,5 +19,19 @@ public class FractionalKnapsack {
             ratio[i][1] = val[i] / (double)weights[i];
         }
         Arrays.sort(ratio, (a,b) -> Double.compare(b[1], a[1])); 
+        int capacity = W;
+        int finalVal = 0;
+        for(int i = 0;i<ratio.length;i++){
+            int idx = (int) ratio[i][0];
+            if(capacity>=weights[idx]){
+                finalVal += val[idx];
+                capacity -= weights[idx]; 
+            }else{
+                finalVal += (ratio[i][1] * capacity);
+                capacity = 0;
+                break;
+            }
+        }
+        System.out.println("Max Value = " + finalVal);
     }
 }
