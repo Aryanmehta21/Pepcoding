@@ -11,5 +11,11 @@ public class FractionalKnapsack {
         for(int i = 0;i<n;i++){
             weights[i]= sc.nextInt();
         }
+        int W = sc.nextInt();
+
+        double[][] ratio = new double[val.length][2];
+        for(int i = 0;i<ratio.length;i++){
+            
+        }
     }
 }
