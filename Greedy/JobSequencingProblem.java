@@ -23,7 +23,7 @@ public class JobSequencingProblem {
 
         int time = 0;
         for(int i = 0;i<jobsInfo.length;i++){
-            if(jobsInfo[i][2] > time){
+            if(jobsInfo[i][1] > time){
                 list.add(jobsInfo[i][0]);
                 time++;
             }
