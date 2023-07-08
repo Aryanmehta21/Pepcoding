@@ -23,5 +23,6 @@ public class MaximumLengthOfChain {
         }
 
         System.out.println("Max Length of the chain: " + chainLen);
+        sc.close();
     } 
 }
