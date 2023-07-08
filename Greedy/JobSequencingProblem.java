@@ -33,5 +33,6 @@ public class JobSequencingProblem {
         for(int i : list){
             System.out.print(i + " ");
         }
+        sc.close();
     }
 }
