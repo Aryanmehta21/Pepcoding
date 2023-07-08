@@ -33,7 +33,6 @@ public class ActivitySelectionProblem{
                 lastEnd = activities[i][2];
             }
         }
-
         System.out.println("Max Activities = " + maxAct);
         for(int i : list){
             System.out.print("A" + i + " ");
