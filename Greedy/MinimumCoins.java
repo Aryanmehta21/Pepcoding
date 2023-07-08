@@ -6,15 +6,23 @@ public class MinimumCoins {
         
         Arrays.sort(coins, Comparator.reverseOrder());
         
-        int countOdCoins = 0;
+        int countOfCoins = 0;
         int amount = sc.nextInt();
+        List<Integer> list = new ArrayList<>();
 
         for(int i = 0;i<coins.length;i++){
             if(coins[i] <= amount){
                 while(coins[i] <= amount){
-                    
+                    countOfCoins++;
+                    list.add(coins[i]);
+                    amount -= coins[i];
                 }
             }
+        }
+
+        System.out.println(countOfCoins);
+        for(int i:list){
+            System.out.println(i + " ");
         }
     }
 }
