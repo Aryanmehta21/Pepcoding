@@ -12,11 +12,11 @@ public class MaximumLengthOfChain {
 
         Arrays.sort(pairs, (a,b) -> Integer.compare(a[1], b[1]));    //Sorting on the basis of first column. Lambda Function in java
 
-        int chainLen = 0;
+        int chainLen = 1;
         int chainEnd = pairs[0][1];
 
         for(int i =1;i<pairs.length;i++){
-            if(pairs[i][0] > chainEnd){
+            if(pairs[i][0] >= chainEnd){
                 chainLen++;
                 chainEnd = pairs[i][1];
             }
