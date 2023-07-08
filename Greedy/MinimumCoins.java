@@ -9,6 +9,12 @@ public class MinimumCoins {
         int countOdCoins = 0;
         int amount = sc.nextInt();
 
-        
+        for(int i = 0;i<coins.length;i++){
+            if(coins[i] <= amount){
+                while(coins[i] <= amount){
+                    
+                }
+            }
+        }
     }
 }
