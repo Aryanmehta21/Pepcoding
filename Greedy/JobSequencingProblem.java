@@ -18,7 +18,20 @@ public class JobSequencingProblem {
         }
 
         Arrays.sort(jobsInfo, (a,b) -> Integer.compare(b[2], a[2]));
+        List<Integer> list = new ArrayList<>();
 
-        
+
+        int time = 0;
+        for(int i = 0;i<jobsInfo.length;i++){
+            if(jobsInfo[i][2] > time){
+                list.add(jobsInfo[i][0]);
+                time++;
+            }
+        }
+        System.out.println(list.size());
+
+        for(int i : list){
+            System.out.print(i + " ");
+        }
     }
 }
