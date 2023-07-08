@@ -24,5 +24,6 @@ public class MinimumCoins {
         for(int i:list){
             System.out.println(i + " ");
         }
+        sc.close();
     }
 }
