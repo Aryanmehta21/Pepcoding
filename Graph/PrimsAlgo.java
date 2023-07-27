@@ -1,5 +1,5 @@
 import java.util.*;
-class Pair{
+class Pair {
     int node;
     int distance;
     public Pair(int distance, int node){
