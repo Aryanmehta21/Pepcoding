@@ -1,13 +1,13 @@
 import java.util.*;
 
-class Pair{
-    int distance;
-    int node;
-    public Pair(int distance, int node){
-        this.distance = distance;
-        this.node = node;
-    }
-}
+// class Pair{
+//     int distance;
+//     int node;
+//     public Pair(int distance, int node){
+//         this.distance = distance;
+//         this.node = node;
+//     }
+// }
 
 public class DijkstraAlgo {
 
