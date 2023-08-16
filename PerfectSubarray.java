@@ -24,6 +24,7 @@ public class PerfectSubarray {
             }
         }
         System.out.println(list.size());
+        sc.close();
     }
 
     public static boolean isPerfectSquare(int x) {
