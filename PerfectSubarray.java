@@ -23,6 +23,7 @@ public class PerfectSubarray {
                 sum = 0;
             }
         }
+        System.out.println(Arrays.asList(list));
         System.out.println(list.size());
         sc.close();
     }
