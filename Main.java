@@ -134,106 +134,204 @@ import java.util.*;
 // }
 
 
-// interface Student{
-//     void name(String name);
-//     void marks(int m1, int m2);
-//     void grade();
-// }
+interface Student{
+    void name(String name);
+    void marks(int m1, int m2);
+    void grade();
+}
 
-// class Undergrad implements Student{
-//     String name;
-//     int marks;
-//     @Override
-//     public void name(String name){
-//         this.name = name;
-//         // System.out.println(name);
-//     }
+class Undergrad implements Student{
+    String name;
+    int marks;
+    @Override
+    public void name(String name){
+        this.name = name;
+        // System.out.println(name);
+    }
     
-//     @Override
-//     public void marks(int m1, int m2){
-//         marks = m1 + m2;
-//         // System.out.println(marks);
-//     }
+    @Override
+    public void marks(int m1, int m2){
+        marks = (m1 + m2)/2;
+        // System.out.println(marks);
+    }
     
-//     @Override
-//     public void grade(){
-//         if(marks>= 90){
-//             System.out.println("A");
-//         }else if(marks>=80 && marks<90){
-//             System.out.println("B");
-//         }else{
-//             System.out.println("C");
-//         }
-//     }
+    @Override
+    public void grade(){
+        if(marks>= 90){
+            System.out.println("A");
+        }else if(marks>=80 && marks<90){
+            System.out.println("B");
+        }else{
+            System.out.println("C");
+        }
+    }
     
-//     public void StudentInfo(){
-//         System.out.println(name);
-//         System.out.println(marks);
+    public void StudentInfo(){
+        System.out.println(name);
+        System.out.println(marks);
        
+    }
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		Undergrad s1 = new Undergrad();
+		s1.name("Aryan");
+		s1.marks(90,70);
+		s1.StudentInfo();
+		s1.grade();
+		
+		Undergrad s2 = new Undergrad();
+		s2.name("asadasdasd");
+		s2.marks(60,90);
+		s2.StudentInfo();
+		s2.grade();
+	}
+}
+
+
+// class Student{
+//     private String name;
+//     private int rollNo;
+//     private int marks;
+    
+    
+//     public void setName(String getName){
+//         name = getName;
+//     }
+    
+//     public String getName(){
+//         return name;
+//     }
+    
+//     public void setRoll(int roll){
+//         rollNo = roll;
+//     }
+    
+//     public int getRoll(){
+//         return rollNo;
+//     }
+    
+//     public void setMarks(int getMarks){
+//         marks = getMarks;
+//     }
+    
+//     public int getMarks(){
+//         return marks;
 //     }
 // }
 
+
+// public class Main{
+//     public static void main(String[] args){
+//         Student s1 = new Student();
+        
+//         s1.setName("Aryan");
+//         s1.setRoll(14);
+//         s1.setMarks(90);
+        
+//         System.out.println(s1.getName());
+//         System.out.println(s1.getRoll());
+//         System.out.println(s1.getMarks());
+//     }
+// }
+
+// class Shape{
+//     public void area(){
+//         System.out.println("Displays the area of " + this.toString());
+//     }
+// }
+
+// class Triangle extends Shape{
+//     public void area(int b, int h){
+//         System.out.println((0.5) * b * h);
+//     }
+//     public String toString() {
+//         return "Triangle";
+//     }
+// }
+
+// class EquilateralTriangle extends Triangle{
+//     public void area(int side){
+//         System.out.println((Math.sqrt(3)/4) * side * side);
+//     }
+//     public String toString() {
+//         return "Equilateral Triangle";
+//     }
+
+// }
+
+// class Circle extends Shape{
+//     public void area(int r){
+//         System.out.println((3.14) * r * r);
+//     }
+//     public String toString() {
+//         return "Circle";
+//     }
+// }
+
+// public class Main{
+//     public static void main(String[] args){
+//         Triangle t = new Triangle();
+//         t.area();
+//         t.area(10, 5);
+
+
+//         Circle c = new Circle();
+//         c.area();
+//         c.area(4);
+
+//         EquilateralTriangle e = new EquilateralTriangle();
+//         e.area();
+//         e.area(6);
+//     }
+// }
+
+
+
+// class Student{
+//     private String name;
+//     private int age;
+//     private int marks;
+    
+//     public void setName(String name){
+//         this.name = name;
+//     }
+//     public String getName(){
+//         return name;
+//     }
+//     public void setAge(int age){
+//         this.age = age;
+//     }
+//     public int getAge(){
+//         return age;
+//     }
+//     public void setMarks(int marks){
+//         this.marks = marks;
+//     }
+//     public int getMarks(){
+//         return marks;
+//     }
+    
+// }
 
 // public class Main
 // {
 // 	public static void main(String[] args) {
-// 		Undergrad s1 = new Undergrad();
-// 		s1.name("Aryan");
-// 		s1.marks(50,70);
-// 		s1.StudentInfo();
-// 		s1.grade();
-		
-// 		Undergrad s2 = new Undergrad();
-// 		s2.name("asadasdasd");
-// 		s2.marks(60,90);
-// 		s2.StudentInfo();
-// 		s2.grade();
+// 		Scanner sc = new Scanner(System.in);
+// 		Student s1 = new Student();
+// 	    String name = sc.next();
+// 	    int age = sc.nextInt();
+// 	    int marks = sc.nextInt();
+	    
+// 	    s1.setName(name);
+// 	    s1.setAge(age);
+// 	    s1.setMarks(marks);
+	    
+// 	    System.out.println(s1.getName());
+// 	    System.out.println(s1.getAge());
+// 	    System.out.println(s1.getMarks());
 // 	}
 // }
-
-
-class Student{
-    private String name;
-    private int rollNo;
-    private int marks;
-    
-    
-    public void setName(String getName){
-        name = getName;
-    }
-    
-    public String getName(){
-        return name;
-    }
-    
-    public void setRoll(int roll){
-        rollNo = roll;
-    }
-    
-    public int getRoll(){
-        return rollNo;
-    }
-    
-    public void setMarks(int getMarks){
-        marks = getMarks;
-    }
-    
-    public int getMarks(){
-        return marks;
-    }
-}
-
-
-public class Main{
-    public static void main(String[] args){
-        Student s1 = new Student();
-        
-        s1.setName("Aryan");
-        s1.setRoll(14);
-        s1.setMarks(90);
-        
-        System.out.println(s1.getName());
-        System.out.println(s1.getRoll());
-        System.out.println(s1.getMarks());
-    }
-}
