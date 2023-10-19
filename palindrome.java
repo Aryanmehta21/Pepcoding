@@ -5,13 +5,13 @@ public class palindrome
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int orignal = n;
-// 		int temp = 0;
-// 		int rem = 0;
-// 	    while(n != 0){
-// 	        rem = n % 10;
-// 	        temp = temp * 10 + rem;
-// 	        n = n/10;
-// 	    }
+		int temp = 0;
+		int rem = 0;
+	    while(n != 0){
+	        rem = n % 10;
+	        temp = temp * 10 + rem;
+	        n = n/10;
+	    }
 
         // Stack<Integer> s = new Stack<>();
         // while(n != 0){
@@ -24,9 +24,9 @@ public class palindrome
         // }
         // System.out.println(temp);
         
-        String s = Integer.toString(n);
-        StringBuilder sb = new StringBuilder(s);
-        int temp = Integer.parseInt(sb.reverse().toString());
+        // String s = Integer.toString(n);
+        // StringBuilder sb = new StringBuilder(s);
+        // int temp = Integer.parseInt(sb.reverse().toString());
         
         
 	    if(temp == orignal){
